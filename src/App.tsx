@@ -12,6 +12,10 @@ import BookingsPage from "./pages/Bookings";
 import AuthPage from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
+import PreferencesPage from "./pages/Preferences";
+import VerificationPage from "./pages/Verification";
+import MessagesPage from "./pages/Messages";
+import BookingCalendarPage from "./pages/BookingCalendar";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,10 @@ const App = () => (
             <Route path="room/:id" element={<RoomDetailPage />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="bookings" element={<BookingsPage />} />
+            <Route path="preferences" element={<PreferencesPage />} />
+            <Route path="verification" element={<VerificationPage />} />
+            <Route path="messages" element={<MessagesPage />} />
+            <Route path="booking" element={<BookingCalendarPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

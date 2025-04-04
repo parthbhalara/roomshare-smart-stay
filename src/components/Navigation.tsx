@@ -13,19 +13,23 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className={`navigation-item ${isActive('/') ? 'active' : ''}`}>
             <Home size={20} />
-            <span>Home</span>
+            <span className="text-xs">Home</span>
           </Link>
           <Link to="/explore" className={`navigation-item ${isActive('/explore') ? 'active' : ''}`}>
             <Search size={20} />
-            <span>Explore</span>
+            <span className="text-xs">Explore</span>
+          </Link>
+          <Link to="/messages" className={`navigation-item ${isActive('/messages') ? 'active' : ''}`}>
+            <MessageSquare size={20} />
+            <span className="text-xs">Messages</span>
           </Link>
           <Link to="/bookings" className={`navigation-item ${isActive('/bookings') ? 'active' : ''}`}>
             <Calendar size={20} />
-            <span>Bookings</span>
+            <span className="text-xs">Bookings</span>
           </Link>
           <Link to="/profile" className={`navigation-item ${isActive('/profile') ? 'active' : ''}`}>
             <User size={20} />
-            <span>Profile</span>
+            <span className="text-xs">Profile</span>
           </Link>
         </div>
       </div>
