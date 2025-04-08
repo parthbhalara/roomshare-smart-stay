@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form";
 import { toast } from "sonner";
-import { Check, User, Users, Smoking, SmokingNo, UtensilsCrossed, Utensils } from "lucide-react";
+import { Check, User, Users, Cigarette, CigaretteOff, UtensilsCrossed, Utensils } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -139,14 +139,14 @@ const PreferencesPage = () => {
                     <div className="flex items-center space-x-2 border rounded-md p-3 hover:bg-gray-50">
                       <RadioGroupItem value="non-smoker" id="non-smoker" />
                       <Label htmlFor="non-smoker" className="flex items-center">
-                        <SmokingNo className="mr-2 h-4 w-4" />
+                        <CigaretteOff className="mr-2 h-4 w-4" />
                         Non-smoker
                       </Label>
                     </div>
                     <div className="flex items-center space-x-2 border rounded-md p-3 hover:bg-gray-50">
                       <RadioGroupItem value="smoker" id="smoker" />
                       <Label htmlFor="smoker" className="flex items-center">
-                        <Smoking className="mr-2 h-4 w-4" />
+                        <Cigarette className="mr-2 h-4 w-4" />
                         Smoker
                       </Label>
                     </div>
