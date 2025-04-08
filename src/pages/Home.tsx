@@ -19,14 +19,17 @@ const HomePage = () => {
         </p>
         
         {/* Search Bar */}
-        <div className="relative mb-8">
-          <Input
-            type="text"
-            placeholder="Search by location"
-            className="pr-10 bg-white"
-          />
-          <Search className="absolute right-3 top-3 h-4 w-4 text-gray-400" />
-        </div>
+        <Link to="/explore">
+          <div className="relative mb-8 cursor-pointer">
+            <Input
+              type="text"
+              placeholder="Search by location"
+              className="pr-10 bg-white"
+              readOnly
+            />
+            <Search className="absolute right-3 top-3 h-4 w-4 text-gray-400" />
+          </div>
+        </Link>
       </section>
 
       {/* Key Features Section */}
@@ -44,7 +47,7 @@ const HomePage = () => {
           </Card>
           <Card className="hover-scale">
             <CardContent className="p-4 flex flex-col items-center justify-center">
-              <div className="bg-roomshare-light rounded-full p-3 mb-3">
+              <div className="bg-roomshare-light rounded-full p-3 mb-3 relative">
                 <User size={24} className="text-roomshare-primary" />
                 <span className="absolute -right-1 -top-1 bg-roomshare-primary text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">+</span>
               </div>
